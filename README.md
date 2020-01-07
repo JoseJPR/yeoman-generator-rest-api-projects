@@ -1,4 +1,4 @@
-# Yeoman | Generator REST API Project [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+# Yeoman | Generator Standard REST API Projects [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 ![Logos](./assets/yeoman.jpg)
 
@@ -12,14 +12,14 @@ With this generator you can build a standard REST API projects scaffoldings and 
 
 This project is alive and I'm currently working on improving it. The features implemented to date are:
 
-✅ Core Project Yeoman.
-✅ Best Practices Doc.
-✅ Main libraries: TypeScript, ESLint, Nodemon, Jest + Supertest.
-✅ Custom libraries: PouchDB Wrapper.
-🔜 Builder Express Project.
-✅ Builder Fastify Project.
-🔜 Builder Koa Project.
-🔜 Builder Polka Project.
+✅ Core Project Yeoman. \
+✅ Best Practices Doc. \
+✅ Main libraries: TypeScript, ESLint, Nodemon, Jest + Supertest. \.
+✅ Custom libraries: PouchDB Wrapper. \
+🔜 Builder Express Project. \
+✅ Builder Fastify Project. \
+🔜 Builder Koa Project. \
+🔜 Builder Polka Project. \
 ✅ Unit Test.
 
 ## 📌 Methodologies and Guidelines
