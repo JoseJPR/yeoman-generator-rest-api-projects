@@ -1,0 +1,32 @@
+{
+  "name": "generator-rest-api-projects",
+  "version": "1.0.0",
+  "description": "🐒 Create Standard REST API Projects with Yeoman and Express, Fastify, Koa and Polka frameworks.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseJPR/yeoman-generator-rest-api-projects.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "Node",
+    "Rest",
+    "API",
+    "Standard",
+    "Scaffoldings"
+  ],
+  "author": "José J. Pérez Rivas <me@josejpr.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseJPR/yeoman-generator-rest-api-projects/issues"
+  },
+  "homepage": "https://github.com/JoseJPR/yeoman-generator-rest-api-projects#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "yeoman-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  }
+}
