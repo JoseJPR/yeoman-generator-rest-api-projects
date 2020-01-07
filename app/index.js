@@ -231,10 +231,6 @@ module.exports = class App extends Generator {
         environments,
       }
     );
-    this.fs.copyTpl(
-      this.templatePath('assets/yeoman.jpg'),
-      this.destinationPath('assets/yeoman.jpg')
-    );
     // Copy common files and lib with pouchdb wrapper, and article crud example.
     if (this.configCrud.pouchdb) {
       this.fs.copyTpl(

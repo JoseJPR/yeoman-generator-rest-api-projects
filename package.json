@@ -1,6 +1,6 @@
 {
   "name": "generator-rest-api-projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🐒 Create Standard REST API Projects with Yeoman and Express, Fastify, Koa and Polka frameworks.",
   "repository": {
     "type": "git",
