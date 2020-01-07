@@ -52,7 +52,7 @@ With Node.js and Yeoman installed, you can run this command:
 
 ```bash
 # Install Generator
-$npm i -g generator-restapiproject
+$npm i -g generator-rest-api-projects
 ```
 
 ## 🚀 How to create my applications
@@ -61,7 +61,7 @@ Once installed you can generate a project by executing the following command.
 
 ```bash
 # Run yeoman generator
-$yo generator-restapiproject
+$yo generator-rest-api-projects
 ```
 
 ## 📂 Code scaffolding
