@@ -1,20 +1,19 @@
 /**
- * Wrapper Fastify Application
- * @description Wrapper class for define versions of Fastify Application.
+ * Wrapper Express Application
+ * @description Wrapper class for define versions of Express Application.
  */
 
 /** Import main dependences */
 import dotenv from 'dotenv';
 import fs from 'fs';
-import fastify from 'fastify';
+import express from 'express';
 
 // Set config docenv by file.
 dotenv.config();
 
-/** Create Fastify App */
-const app: fastify.FastifyInstance = fastify({
-  logger: process.env.LOGGER, // This param can be true or false for show logs.
-});
+/** Create Express App */
+const app: express.Application = express();
+app.use(express.json());
 
 /** Register all routes */
 const registerRoutes = async (): Promise<void> => {
@@ -27,14 +26,14 @@ const registerRoutes = async (): Promise<void> => {
       if (ext.length === 2 && process.env.EXTENSIONS.split(',').includes(ext[ext.length -1])) {
         const endpoint = await import(`./config/endpoints/${file}`);
         const route = await import(`./routes/${endpoint.default[0].file}`);
-        app.register(route.default, { prefix: endpoint.default[0].prefix });
+        app.use(endpoint.default[0].prefix, route.default);
       }
     } catch (err) {
       console.error(err);
       throw err;
     }
   });
-}
+};
 
 /** Run the server! */
 (async (): Promise<void> => {

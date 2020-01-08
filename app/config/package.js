@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable quote-props */
 module.exports = {
   'main': 'dist/index.js',
   'scripts': {
