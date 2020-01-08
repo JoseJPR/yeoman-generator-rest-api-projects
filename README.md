@@ -16,7 +16,7 @@ This project is alive and I'm currently working on improving it. The features im
 ✅ Best Practices Doc. \
 ✅ Main libraries: TypeScript, ESLint, Nodemon, Jest + Supertest. \
 ✅ Custom libraries: PouchDB Wrapper. \
-🔜 Builder Express Project. \
+✅ Builder Express Project. \
 ✅ Builder Fastify Project. \
 🔜 Builder Koa Project. \
 🔜 Builder Polka Project. \
