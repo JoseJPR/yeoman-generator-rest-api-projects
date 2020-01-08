@@ -5,8 +5,8 @@
 const ENDPOINT = [
   {
     file: 'root',
-    prefix: '/'
-  }
+    prefix: '/',
+  },
 ];
 
 export default ENDPOINT;

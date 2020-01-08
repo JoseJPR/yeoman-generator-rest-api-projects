@@ -4,7 +4,7 @@
  */
 
 /** Import main dependences */
-import fastify from 'fastify';
+import express from 'express';
 
 /** Import all Services */
 import ServiceArticle from '../services/articles';
@@ -17,13 +17,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {fastify.DefaultQuery} request - request object of route.
-   * @param {fastify.DefaultQuery} reply - reply object of route.
+   * @param {express.Request} request - request object of route.
+   * @param {express.Response} reply - reply object of route.
    *
    */
   getAll = async (
-    request: fastify.DefaultQuery,
-    reply: fastify.DefaultQuery,
+    request: express.Request,
+    reply: express.Response,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -37,7 +37,7 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.code(code);
+    reply.status(code);
     reply.send(response);
   }
 
@@ -48,13 +48,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {fastify.DefaultQuery} request - request object of route.
-   * @param {fastify.DefaultQuery} reply - reply object of route.
+   * @param {express.Request} request - request object of route.
+   * @param {express.Response} reply - reply object of route.
    *
    */
   getOne = async (
-    request: fastify.DefaultQuery,
-    reply: fastify.DefaultQuery,
+    request: express.Request,
+    reply: express.Response,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -68,7 +68,7 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.code(code);
+    reply.status(code);
     reply.send(response);
   }
 
@@ -79,13 +79,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {fastify.DefaultQuery} request - request object of route.
-   * @param {fastify.DefaultQuery} reply - reply object of route.
+   * @param {express.Request} request - request object of route.
+   * @param {express.Response} reply - reply object of route.
    *
    */
   create = async (
-    request: fastify.DefaultQuery,
-    reply: fastify.DefaultQuery,
+    request: express.Request,
+    reply: express.Response,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -99,7 +99,7 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.code(code);
+    reply.status(code);
     reply.send(response);
   }
 
@@ -110,13 +110,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {fastify.DefaultQuery} request - request object of route.
-   * @param {fastify.DefaultQuery} reply - reply object of route.
+   * @param {express.Request} request - request object of route.
+   * @param {express.Response} reply - reply object of route.
    *
    */
   update = async (
-    request: fastify.DefaultQuery,
-    reply: fastify.DefaultQuery,
+    request: express.Request,
+    reply: express.Response,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -130,7 +130,7 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.code(code);
+    reply.status(code);
     reply.send(response);
   }
 
@@ -141,13 +141,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {fastify.DefaultQuery} request - request object of route.
-   * @param {fastify.DefaultQuery} reply - reply object of route.
+   * @param {express.Request} request - request object of route.
+   * @param {express.Response} reply - reply object of route.
    *
    */
   delete = async (
-    request: fastify.DefaultQuery,
-    reply: fastify.DefaultQuery,
+    request: express.Request,
+    reply: express.Response,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -161,7 +161,7 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.code(code);
+    reply.status(code);
     reply.send(response);
   }
 }

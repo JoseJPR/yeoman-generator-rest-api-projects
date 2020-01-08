@@ -17,7 +17,7 @@ class Main {
    */
   handler = async (): Promise<ObjectType> => new Promise((resolve) => {
     resolve({
-      result: '⭐️ Hi! From a NodeJS Application with Fastify.',
+      result: '⭐️ Hi! From a NodeJS Application with Express.',
     });
   })
 }

@@ -5,7 +5,7 @@ module.exports = {
       name: 'start',
       message: '🚀 Do you want to continue?',
       default: true,
-      store: true
+      store: true,
     },
   ],
   configNpm: [
@@ -14,36 +14,36 @@ module.exports = {
       name: 'name',
       message: 'The Project Name',
       default: 'NodeJS Application',
-      store: true
+      store: true,
     },
     {
       type: 'input',
       name: 'version',
       message: 'Version (default: 1.0.0)',
       default: '1.0.0',
-      store: true
+      store: true,
     },
     {
       type: 'input',
       name: 'description',
       message: 'Description',
       default: '',
-      store: true
+      store: true,
     },
     {
       type: 'input',
       name: 'author',
       message: 'Author',
       default: '',
-      store: true
+      store: true,
     },
     {
       type: 'input',
       name: 'license',
       message: 'License',
       default: 'ISC',
-      store: true
-    }
+      store: true,
+    },
   ],
   configApp: [
     {
@@ -54,11 +54,11 @@ module.exports = {
         'Express',
         'Fastify',
         'Polka',
-        'Koa'
+        'Koa',
       ],
       default: 'Fastify',
       required: true,
-      store: true
+      store: true,
     },
     {
       type: 'input',
@@ -66,7 +66,7 @@ module.exports = {
       message: 'Write IP Address to assign to the local environment web server? (default: 127.0.0.1)',
       default: '127.0.0.1',
       required: true,
-      store: true
+      store: true,
     },
     {
       type: 'input',
@@ -74,7 +74,7 @@ module.exports = {
       message: 'And the Port number? (default: 3000)',
       default: 3000,
       required: true,
-      store: true
+      store: true,
     },
     {
       type: 'checkbox',
@@ -87,7 +87,7 @@ module.exports = {
         'Production',
       ],
       store: true,
-    }
+    },
   ],
   configCrud: [
     {
@@ -95,7 +95,7 @@ module.exports = {
       name: 'pouchdb',
       message: '🎲 Do you want to add an example CRUD to this project?',
       default: true,
-      store: true
-    }
-  ]
+      store: true,
+    },
+  ],
 };
