@@ -1,19 +1,24 @@
 /**
- * Wrapper Express Application
- * @description Wrapper class for define versions of Express Application.
+ * Wrapper Koa Application
+ * @description Wrapper class for define versions of Koa Application.
  */
 
 /** Import main dependences */
 import dotenv from 'dotenv';
 import fs from 'fs';
-import express from 'express';
+import Koa from 'koa';
+import koaBody from 'koa-body';
+import logger from 'koa-logger';
 
 // Set config docenv by file.
 dotenv.config();
 
-/** Create Express App */
-const app: express.Application = express();
-app.use(express.json());
+/** Create Koa App */
+const app: Koa = new Koa();
+app.use(koaBody());
+if (process.env.LOGGER && process.env.LOGGER === 'true') {
+  app.use(logger());
+}
 
 /** Register all routes */
 const registerRoutes = async (): Promise<void> => {
@@ -26,7 +31,7 @@ const registerRoutes = async (): Promise<void> => {
       if (ext.length === 2 && process.env.EXTENSIONS.split(',').includes(ext[ext.length - 1])) {
         const endpoint = await import(`./config/endpoints/${file}`);
         const route = await import(`./routes/${endpoint.default[0].file}`);
-        app.use(endpoint.default[0].prefix, route.default);
+        app.use(route.default(endpoint.default[0].prefix));
       }
     } catch (err) {
       console.error(err);

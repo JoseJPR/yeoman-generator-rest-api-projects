@@ -24,7 +24,7 @@ const registerRoutes = async (): Promise<void> => {
     try {
       // Get extension file for only load .js or .ts files.
       const ext = file.split('.');
-      if (ext.length === 2 && process.env.EXTENSIONS.split(',').includes(ext[ext.length -1])) {
+      if (ext.length === 2 && process.env.EXTENSIONS.split(',').includes(ext[ext.length - 1])) {
         const endpoint = await import(`./config/endpoints/${file}`);
         const route = await import(`./routes/${endpoint.default[0].file}`);
         app.register(route.default, { prefix: endpoint.default[0].prefix });
