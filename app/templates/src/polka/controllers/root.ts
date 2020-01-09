@@ -3,9 +3,6 @@
  * @description Wrapper class for define all bussines logic for root.
  */
 
-/** Import main dependences */
-import express from 'express';
-
 /** Import all Services */
 import ServiceRoot from '../services/root';
 
@@ -20,13 +17,13 @@ class Main {
    *
    * @author Jose J Perez Rivas | @JoseJPR
    *
-   * @param {express.Request} request - request object of route.
-   * @param {express.Response} reply - reply object of route.
+   * @param {ObjectType} request - request object of route.
+   * @param {ObjectType} reply - reply object of route.
    *
    */
   handler = async (
-    request: express.Request,
-    reply: express.Response,
+    request: ObjectType,
+    reply: ObjectType,
   ): Promise<void> => {
     // Declare main variables for set code number and respone object.
     let code: number;
@@ -40,8 +37,8 @@ class Main {
       response = e;
     }
     // Set status and send of reply
-    reply.status(code);
-    reply.send(response);
+    reply.writeHead(code, { 'Content-Type': 'application/json' });
+    reply.end(JSON.stringify(response));
   }
 }
 

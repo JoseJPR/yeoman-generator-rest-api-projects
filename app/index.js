@@ -112,6 +112,7 @@ module.exports = class App extends Generator {
         break;
       case 'Polka':
         CONFIG.PACKAGE.dependencies.polka = CONFIG.VERSIONS.polka;
+        CONFIG.PACKAGE.dependencies['body-parser'] = CONFIG.VERSIONS['body-parser'];
         break;
       case 'Koa':
         CONFIG.PACKAGE.dependencies.koa = CONFIG.VERSIONS.koa;
