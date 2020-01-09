@@ -18,7 +18,7 @@ This project is alive and I'm currently working on improving it. The features im
 ✅ Custom libraries: PouchDB Wrapper. \
 ✅ Builder Express Project. \
 ✅ Builder Fastify Project. \
-🔜 Builder Koa Project. \
+✅ Builder Koa Project. \
 🔜 Builder Polka Project. \
 ✅ Unit Test.
 
