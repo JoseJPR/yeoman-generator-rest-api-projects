@@ -115,7 +115,12 @@ module.exports = class App extends Generator {
         break;
       case 'Koa':
         CONFIG.PACKAGE.dependencies.koa = CONFIG.VERSIONS.koa;
+        CONFIG.PACKAGE.dependencies['koa-router'] = CONFIG.VERSIONS['koa-router'];
+        CONFIG.PACKAGE.dependencies['koa-body'] = CONFIG.VERSIONS['koa-body'];
+        CONFIG.PACKAGE.dependencies['koa-logger'] = CONFIG.VERSIONS['koa-logger'];
         CONFIG.PACKAGE.devDependencies['@types/koa'] = CONFIG.VERSIONS['@types/koa'];
+        CONFIG.PACKAGE.devDependencies['@types/koa-router'] = CONFIG.VERSIONS['@types/koa-router'];
+        CONFIG.PACKAGE.devDependencies['@types/koa-logger'] = CONFIG.VERSIONS['@types/koa-logger'];
         break;
       default:
         CONFIG.PACKAGE.dependencies.fastify = CONFIG.VERSIONS.fastify;
