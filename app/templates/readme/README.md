@@ -1,5 +1,7 @@
 # <%= name %> | REST API [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
+![Banner](./assets/banner.jpg)
+
 ## Description
 
 REST API Project for <%= name %>.
@@ -93,5 +95,5 @@ Created with JavaScript, lot of ❤️ and a few ☕️
 
 ## This README.md file has been written keeping in mind
 
-* [GitHub Markdown](https://guides.github.com/features/mastering-markdown/) \
+* [GitHub Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)

@@ -257,6 +257,11 @@ module.exports = class App extends Generator {
         environments,
       },
     );
+    fs.mkdirSync(this.destinationPath('assets/'));
+    fs.copyFileSync(
+      this.templatePath(`assets/banner-${this.configApp.server.toLowerCase()}.jpg`),
+      this.destinationPath('assets/banner.jpg'),
+    );
     // Copy common files and lib with pouchdb wrapper, and article crud example.
     if (this.configCrud.pouchdb) {
       this.fs.copyTpl(
