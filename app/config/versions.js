@@ -13,4 +13,5 @@ module.exports = {
   '@types/koa-router': '^7.0.42',
   '@types/koa-logger': '^3.1.1',
   'koa-logger': '3.2.1',
+  'body-parser': '^1.19.0',
 };
