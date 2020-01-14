@@ -2,9 +2,9 @@
 
 ![Logos](./assets/yeoman.jpg)
 
-## Description
+## 🔖 Description
 
-🐒 Create Standard REST API Projects with [Yeoman](https://yeoman.io/).
+🐒 Create Standard REST API Projects with [Yeoman](https://yeoman.io/?target=_blank).
 
 With this generator you can build a standard REST API projects scaffoldings and tools with Express, Fastify, Polka or Koa frameworks and PouchDB for a local DB.
 
