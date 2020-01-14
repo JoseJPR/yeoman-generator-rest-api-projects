@@ -8,6 +8,12 @@
 
 With this generator you can build a standard REST API projects scaffoldings and tools with Express, Fastify, Polka or Koa frameworks and PouchDB for a local DB.
 
+## 📹 Video Demo
+
+The following video shows how with Yeoman and this Generator you can start a NodeJS API REST project with Fastify framework in just 5 minutes.
+
+[![Video](./assets/video.jpg)](https://youtu.be/ykIKjfnsml4)
+
 ## 🏁 WIP
 
 This project is alive and I'm currently working on improving it. The features implemented to date are:
@@ -21,7 +27,8 @@ This project is alive and I'm currently working on improving it. The features im
 ✅ Builder Koa Project. \
 ✅ Builder Polka Project. \
 ✅ Unit Test. \
-🔜 Improve Documentation and custom Readme.md by libraries.
+✅ Improve Documentation and custom Readme.md by libraries. \
+🔜 Include pre-commits rules with Husky library.
 
 ## 📌 Methodologies and Guidelines
 
