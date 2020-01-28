@@ -4,7 +4,7 @@
 
 ## 🔖 Description
 
-🐒 Create Standard REST API Projects with [Yeoman](https://yeoman.io/).
+🔌 Create Standard REST API Projects with [Yeoman](https://yeoman.io/).
 
 With this generator you can build a standard REST API projects scaffoldings and tools with Express, Fastify, Polka or Koa frameworks and PouchDB for a local DB.
 
@@ -115,12 +115,6 @@ For review and update all npm dependences of this project you need install in gl
 $npm i -g npm-check
 $npm-check
 ```
-
-## Contact
-
-🎓 [Linkedin](https://www.linkedin.com/in/josejpr/) \
-🐦 [Twitter](https://twitter.com/JoseJ_PR) \
-📧 me@josejpr.com
 
 ## License
 
