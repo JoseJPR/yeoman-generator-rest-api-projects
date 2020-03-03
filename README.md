@@ -12,23 +12,7 @@ With this generator you can build a standard REST API projects scaffoldings and 
 
 The following video shows how with Yeoman and this Generator you can start a NodeJS API REST project with Fastify framework in just 5 minutes.
 
-[![Video](./assets/video.jpg)](https://youtu.be/ykIKjfnsml4)
-
-## 🏁 WIP
-
-This project is alive and I'm currently working on improving it. The features implemented to date are:
-
-✅ Core Project Yeoman. \
-✅ Best Practices Doc. \
-✅ Main libraries: TypeScript, ESLint, Nodemon, Jest + Supertest. \
-✅ Custom libraries: PouchDB Wrapper. \
-✅ Builder Express Project. \
-✅ Builder Fastify Project. \
-✅ Builder Koa Project. \
-✅ Builder Polka Project. \
-✅ Unit Test. \
-✅ Improve Documentation and custom Readme.md by libraries. \
-🔜 Include pre-commits rules with Husky library.
+[![Video](./assets/youtube.svg)](https://youtu.be/ykIKjfnsml4)
 
 ## 📌 Methodologies and Guidelines
 
